@@ -1,0 +1,9 @@
+{% extends 'loans/base.html' %}
+
+{% block title %}Admin Dashboard{% endblock %}
+
+{% block content %}
+<h1>Admin Dashboard</h1>
+<p>Manage loans, categories, and user applications here.</p>
+<a href="{% url 'add_category' %}" class="btn btn-primary">Add Loan Category</a>
+{% endblock %}

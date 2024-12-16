@@ -1,6 +1,10 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Loan, LoanCategory, Transaction
 from django.contrib.auth.decorators import login_required
+from django.views import dashboard
+
+
+
 
 @login_required
 def dashboard(request):
